@@ -1,6 +1,6 @@
 module "webapp" {
   source           = "../class4"
-  region           = "eu-west-2"
+  region           = "us-east-2"
   max_size         = "1"
   min_size         = "1"
   desired_capacity = "1"
@@ -10,9 +10,9 @@ module "webapp" {
 module "python" {
   source           = "../class4"
   region           = "us-west-2"
-  max_size         = "2"
-  min_size         = "2"
-  desired_capacity = "2"
+  max_size         = "1"
+  min_size         = "1"
+  desired_capacity = "1"
   image_owner      = "137112412989"
 }
 
